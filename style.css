@@ -1,0 +1,32 @@
+#screen {
+  font-size: 24px;
+  text-align: right;
+  background-color: black;
+  color: white;
+  width: 320px;      /* 電卓の幅に合わせる */
+  display: block;
+  margin-bottom: 5px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 80px); /* 4列、各ボタンの幅を80pxに固定 */
+  gap: 2px;
+  margin-top: 5px;
+  justify-content: start; /* 左寄せに配置 */
+}
+
+.keys button {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.wide {
+  grid-column: span 2; /* 横に2マス分広げる */
+}
+
+.keys button.active {
+  outline: none !important;              /* デフォルトの青枠は消す */
+  border: 2px solid #3399ff !important;  /* 枠線を青にする */
+}

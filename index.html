@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="style.css">
+    <title>電卓</title>
+  </head>
+
+    <body>
+    <!-- 表示部分 -->
+    <input id="screen" class="screen" type="text" placeholder="0" readonly>
+
+    <!-- ボタン部分 -->
+    <div class="keys">
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="+">+</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="-">-</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-value="*">×</button>
+
+        <button data-value="0">0</button>
+        <button data-value="00">00</button>
+        <button data-value=".">.</button>
+        <button data-value="/">÷</button>
+
+    
+        <button class="wide" data-action="clear">AC</button>
+        <button class="wide" data-action="equals">=</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
